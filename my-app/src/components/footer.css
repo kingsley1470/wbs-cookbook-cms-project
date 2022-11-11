@@ -1,7 +1,19 @@
 .footerComponent {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100% ;
     padding: 1rem;
+}
+.footerReview {
+    min-width: 10rem;
+    padding: 2rem;
+   
+
+}
+
+.footerComponent h2 {
+    text-align: center;
+    padding: 3rem;
 }
