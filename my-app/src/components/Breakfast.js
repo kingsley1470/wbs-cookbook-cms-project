@@ -4,7 +4,7 @@ import { NavLink, Routes, Route } from 'react-router-dom'
 import FullRecipe from './FullRecipe'
 
 
-function Breakfast() {
+function Breakfast({articles}) {
     return (
         <div className='heading-section'>
             <h1>breakfast recipes</h1>
@@ -24,7 +24,7 @@ function Breakfast() {
             </div>
 
             <Routes >
-                <Route path='/:recipe' element={<FullRecipe />} />
+                <Route path='/:recipe' element={<FullRecipe articles={articles}/>} />
             </Routes>
         </div>
     )

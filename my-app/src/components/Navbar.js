@@ -7,10 +7,9 @@ import MainDishes from "./MainDishes";
 import Soup from "./Soup";
 import Salads from "./Salads";
 import Desserts from "./Desserts";
-
-function Navbar() {
-  console.log(process.env.REACT_APP_ROXI);
-  console.log("navbar");
+import FullRecipe from "./FullRecipe";
+function Navbar({articles}) {
+console.log(articles)
   return (
     <div>
       <ul className="links-section">
@@ -49,12 +48,13 @@ function Navbar() {
       </ul>
 
       <Routes>
-        <Route index path="/home" element={<Home />} />
-        <Route path="/breakfast" element={<Breakfast />} />
-        <Route path="/mainDishes" element={<MainDishes />} />
-        <Route path="/soups" element={<Soup />} />
-        <Route path="/salads" element={<Salads />} />
-        <Route path="/desserts" element={<Desserts />} />
+        <Route index path="/home" element={<Home articles={articles}/>} />
+        <Route path="/breakfast" element={<Breakfast articles={articles}/>} />
+        <Route path="/mainDishes" element={<MainDishes articles={articles}/>} />
+        <Route path="/soups" element={<Soup articles={articles}/>} />
+        <Route path="/salads" element={<Salads articles={articles}/>} />
+        <Route path="/desserts" element={<Desserts articles={articles}/>} />
+        <Route path='/breakfast/:recipe' element={<FullRecipe articles={articles}/>} />
       </Routes>
     </div>
   );

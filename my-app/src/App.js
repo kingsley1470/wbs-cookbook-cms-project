@@ -3,38 +3,29 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Main from './components/Main';
-
+import { useState, useEffect } from "react";
 import React from "react";
  import "./App2.css";
 import { client } from "./client";
 import Posts from "./components/Posts";
 
-class App extends React.Component {
-  constructor(props) {
-   super(props) 
-    this.state = {
-   articles: [],
- };}
- 
-  componentDidMount() {
+const App = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect( () => {
     client
       .getEntries()
       .then((response) => {
-        console.log(response);
+        console.log(response.items);
 
-        this.setState({
-          articles: response.items,
-        });
+        setArticles(response.items);
       })
-
       .catch(console.error);
-      }
+  }, [])
 
-      
-  render() {
-    console.log(process.env.REACT_APP_ROXI);
-    return (
-      <div className="App">
+  return (
+
+     <div className="App">
         <div className="container">
           <header>
             <div className="Header">
@@ -43,10 +34,15 @@ class App extends React.Component {
           </header>
           <main>
             <div className="Navbar">
-              <Navbar />
+              <Navbar articles={articles} />
             </div>
+            
             <div className="wrapper">
-              <Posts posts={this.state.articles} />
+            { articles ?
+              <Posts posts={articles} />
+              :
+              <h1>Loading...</h1>
+              }
             </div>
           </main>
           <footer>
@@ -56,7 +52,7 @@ class App extends React.Component {
           </footer>
         </div>
       </div>
-    );
-  }
+  )
 }
+
 export default App;
