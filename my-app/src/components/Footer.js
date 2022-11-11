@@ -6,8 +6,7 @@ function Footer() {
   let { reviews } = Reviews;
 
   return (
-    <div className="footerComponent">
-     
+    <div className="footerComponent">     
       {reviews.map((r) => (
         <div>
           <h3>"{r.quote}"</h3>

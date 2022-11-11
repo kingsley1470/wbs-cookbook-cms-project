@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -52,7 +51,7 @@ class App extends React.Component {
           </main>
           <footer>
             <div className='footer'>
-              <Footer />
+              <Footer className="footer"/>
             </div>
           </footer>
         </div>
