@@ -55,6 +55,10 @@ console.log(articles)
         <Route path="/salads" element={<Salads articles={articles}/>} />
         <Route path="/desserts" element={<Desserts articles={articles}/>} />
         <Route path='/breakfast/:recipe' element={<FullRecipe articles={articles}/>} />
+        <Route path='/mainDishes/:recipe' element={<FullRecipe articles={articles}/>} />
+        <Route path='/soups/:recipe' element={<FullRecipe articles={articles}/>} />
+        <Route path='/salads/:recipe' element={<FullRecipe articles={articles}/>} />
+        <Route path='/desserts/:recipe' element={<FullRecipe articles={articles}/>} />
       </Routes>
     </div>
   );

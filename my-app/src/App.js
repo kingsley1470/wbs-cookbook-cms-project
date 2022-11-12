@@ -17,7 +17,6 @@ const App = () => {
       .getEntries()
       .then((response) => {
         console.log(response.items);
-
         setArticles(response.items);
       })
       .catch(console.error);
