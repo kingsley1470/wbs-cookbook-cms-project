@@ -3,7 +3,6 @@ import "./styles.css"
 import { NavLink, Routes, Route } from 'react-router-dom'
 import FullRecipe from './FullRecipe'
 
-
 function Breakfast({articles}) {
     return (
         <div className='heading-section'>
