@@ -1,6 +1,6 @@
 import React from 'react'
 import "./styles.css"
-import { NavLink, Routes, Route,useParams } from 'react-router-dom'
+import { NavLink, Routes, Route, useParams } from 'react-router-dom'
 import FullRecipe from './FullRecipe'
 
 

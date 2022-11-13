@@ -17,7 +17,7 @@ const Post = ({ article }) => {
         />
       )}
 
-      <section dangerouslySetInnerHTML={{ __html: postDescription }} />
+      <section dangerouslySetInnerHTML={{ __html: postDescription}} />
     </div>
   );
 };

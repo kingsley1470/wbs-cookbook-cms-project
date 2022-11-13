@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Main from './components/Main';
-import { useState, useEffect } from "react";
+import { useState, useEffect, seParams } from "react";
 import React from "react";
  import "./App2.css";
 import { client } from "./client";
