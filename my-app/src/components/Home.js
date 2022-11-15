@@ -4,8 +4,11 @@ import CookingBubble from './CookingBubble';
 
 function Home() {
   return (
+    <div>
+    
     <div className='home-section'>
       <CookingBubble />
+    </div>
     </div>
   )
 }

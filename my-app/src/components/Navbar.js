@@ -8,6 +8,7 @@ import Soup from "./Soup";
 import Salads from "./Salads";
 import Desserts from "./Desserts";
 import FullRecipe from "./FullRecipe";
+import Main from "./Main";
 function Navbar({articles}) {
 console.log(articles)
   return (
@@ -48,7 +49,8 @@ console.log(articles)
       </ul>
 
       <Routes>
-        <Route index path="/home" element={<Home articles={articles}/>} />
+        <Route index element={<Home />}/>
+        <Route path="/home" element={<Main articles={articles}/>} />
         <Route path="/breakfast" element={<Breakfast articles={articles}/>} />
         <Route path="/mainDishes" element={<MainDishes articles={articles}/>} />
         <Route path="/soups" element={<Soup articles={articles}/>} />
