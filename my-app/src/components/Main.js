@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './Post';
+import CookingBubble from './CookingBubble';
 
 const Main = ({articles}) => {
   let topFive=[];
@@ -12,10 +13,11 @@ const Main = ({articles}) => {
   
   return (
     <>
+    <CookingBubble />
       { articles ?
-        <div>
+        <div className='mainSectionofMain'>
           <h2>Our Latest Recipes</h2>
-          <div>
+          <div className='allPosts2'>
             {
               topFive.map((article, index) =>
                 <Post article={article} key={index} />
