@@ -11,9 +11,10 @@ function Footer() {
    
       {reviews.map((r) => (
         <div className="footerReview">
-          <h3><i>"{r.quote}"</i></h3>
+          <div className="onlyTextFooter"><h3><i>"{r.quote}"</i></h3>
           <p>{r.name}</p>
           <p>{r.year}</p>
+          </div>
           <img className="footerImages" src={r.image}></img>
         </div>
       ))}

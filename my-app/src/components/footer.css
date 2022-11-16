@@ -7,8 +7,8 @@
     padding: 1rem;
 }
 .footerReview {
-    min-width: 10rem;
-    padding: 2rem;
+    min-width: 15rem;
+    padding: 3rem;
    
 
 }
@@ -24,4 +24,19 @@
     align-items: flex-end;
     align-self: flex-end;
     align-content: flex-end;
+}
+
+.onlyTextFooter {
+    height: 70%;
+}
+
+.footerReview>img {
+    height: 37%
+    ;
+}
+
+@media screen and (max-width: 992px) {
+    .footerComponent {
+        flex-direction: column;
+    }
 }

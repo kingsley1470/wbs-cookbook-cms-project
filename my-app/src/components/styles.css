@@ -48,11 +48,9 @@
       }
       .home-section{
         display: grid;
-        height: 250px;
         align-items: center;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
-        background-color: rgb(121 168 118 / 57%);
       }
       .home-section p{
         font-family:Verdana, Geneva, Tahoma, sans-serif ;
@@ -95,6 +93,7 @@
       @media only screen and (max-width:710px) {
         .links-section {
           font-size: smaller;
+          width: 60%;
         }
         }
 

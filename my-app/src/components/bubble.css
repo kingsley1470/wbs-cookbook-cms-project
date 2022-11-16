@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 
 .body {
-    height: 37vh;
+    height: 40vh;
     width: 100vw;
     overflow: hidden;
     margin: 0 auto;
@@ -68,7 +68,7 @@
   #cooking #area {
     bottom: 0;
     right: 0;
-    height: 50%;
+    height: 60%;
     background-color: transparent;
     transform-origin: 15% 60%;
     animation: flip 2.1s ease-in-out infinite;
