@@ -2,24 +2,28 @@
     {
     "name": "New York Times",
     "year": "2022",
-    "quote": "Best cookbook of the year"
+    "quote": "Best cookbook of the year",
+    "image": "https://media.istockphoto.com/id/1176397624/vector/vector-flat-golden-trophy.jpg?s=612x612&w=0&k=20&c=kjnN3SB3l1cAMMt5xUvnyJDfPzQKzZ_pZHt3jaFnmF0="
   },
   
   {
     "name": "My Mom",
     "year": "2021",
-    "quote": "Meh"
+    "quote": "Meh",
+    "image": "https://media.istockphoto.com/id/1176397624/vector/vector-flat-golden-trophy.jpg?s=612x612&w=0&k=20&c=kjnN3SB3l1cAMMt5xUvnyJDfPzQKzZ_pZHt3jaFnmF0="
   },
   
   {
     "name": "Cosmopolitan",
     "year": "2022",
-    "quote": "Awesome"
+    "quote": "Awesome",
+    "image": "https://media.istockphoto.com/id/1176397624/vector/vector-flat-golden-trophy.jpg?s=612x612&w=0&k=20&c=kjnN3SB3l1cAMMt5xUvnyJDfPzQKzZ_pZHt3jaFnmF0="
   },
   
   {
     "name": "other important people",
     "year": "2022",
-    "quote": "All you need is this cookbook"
+    "quote": "All you need is this cookbook",
+    "image": "https://media.istockphoto.com/id/1176397624/vector/vector-flat-golden-trophy.jpg?s=612x612&w=0&k=20&c=kjnN3SB3l1cAMMt5xUvnyJDfPzQKzZ_pZHt3jaFnmF0="
   }
   ] }

@@ -14,6 +14,7 @@ function Footer() {
           <h3><i>"{r.quote}"</i></h3>
           <p>{r.name}</p>
           <p>{r.year}</p>
+          <img className="footerImages" src={r.image}></img>
         </div>
       ))}
     </div>
