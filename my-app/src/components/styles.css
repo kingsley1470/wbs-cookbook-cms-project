@@ -5,7 +5,7 @@
     .links-section{
         display: flex;
         justify-content:space-evenly;
-       align-items: center;
+        align-items: center;
         height: 10vh;
         border: 1px solid rgb(232, 227, 227);
         background-color: rgb(223, 224, 227);
@@ -91,4 +91,8 @@
         margin-top: 1%;
       }
 
-     
+      @media only screen and (max-width:710px) {
+        .links-section {
+          font-size: smaller;
+        }
+        }
