@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Main from "./components/Main";
 // import Main from './components/Main';
 import { useState, useEffect, seParams } from "react";
 import React from "react";
@@ -17,7 +18,6 @@ const App = () => {
       .getEntries()
       .then((response) => {
         console.log(response.items);
-
         setArticles(response.items);
       })
       .catch(console.error);
@@ -36,14 +36,22 @@ const App = () => {
             <div className="Navbar">
               <Navbar articles={articles} />
             </div>
-            
+
+            {/* <div className="wrapper">
+            { articles?
+                   <Main articles={articles} />
+                :
+                <h1>Loading...</h1>
+                }
+            </div> */}
+{/*           
             <div className="wrapper">
             { articles ?
               <Posts posts={articles} />
               :
               <h1>Loading...</h1>
               }
-            </div>
+            </div> */}
           </main>
           <footer>
             <div className='footer'>

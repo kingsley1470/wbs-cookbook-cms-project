@@ -1,7 +1,42 @@
 .footerComponent {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     width: 100% ;
     padding: 1rem;
+}
+.footerReview {
+    min-width: 15rem;
+    padding: 3rem;
+   
+
+}
+
+.footerComponent h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.footerImages {
+    width: 50%;
+    height: auto;
+    align-items: flex-end;
+    align-self: flex-end;
+    align-content: flex-end;
+}
+
+.onlyTextFooter {
+    height: 70%;
+}
+
+.footerReview>img {
+    height: 37%
+    ;
+}
+
+@media screen and (max-width: 992px) {
+    .footerComponent {
+        flex-direction: column;
+    }
 }

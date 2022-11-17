@@ -3,7 +3,7 @@ import Post from "./Post";
 
 const Posts = ({ posts }) => {
   return (
-    <div>
+    <div className="allPosts">
       {posts.map((article, index) => 
         <Post article={article} key={index} />
       )}

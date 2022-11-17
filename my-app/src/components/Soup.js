@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink, Routes,Route} from 'react-router-dom'
 import FullRecipe from './FullRecipe';
 
-function Soup() {
+function Soup({articles}) {
   return (
     <div className='heading-section'>
     <h1>soup recipes</h1>
@@ -11,14 +11,19 @@ function Soup() {
             <p>Lentil Soup</p></NavLink>
         </div>
         <div><NavLink to='/soups/mushroom-soup' ><img src={require('../images/mushroom-soup.webp')} alt='mushroom-soup' />
-            <p>avocado-feta-toast</p></NavLink> </div>
+            <p>Mushroom Soup</p></NavLink> </div>
+            
         <div><NavLink to='/soups/cauliflower-soup' ><img src={require('../images/cauliflower-soup.webp')} alt='cauliflower-soup' />
-            <p>nutty-pancakes</p></NavLink></div>
+            <p>Cauliflower Soup</p></NavLink></div>
+         
+            <div><NavLink to='/soups/companion' ><img src={require('../images/fish_soup.png')} alt='fish_soup' />
+            <p>Fish Soup</p></NavLink></div>
+            
       
     </div>
 
     <Routes >
-        <Route path='/:recipe' element={<FullRecipe />} />
+        <Route path='/:recipe' element={<FullRecipe articles={articles} />} />
        
     </Routes>
 </div>
